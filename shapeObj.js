@@ -34,12 +34,12 @@ let Circle = {
     radius: 7,
 
     circumference: function(){
-        let c = 2*this.radius * Math.pi;
+        let c = 2*this.radius * Math.PI;
         return c;
     },
 
     area: function(){
-        let a = this.radius * this.radius * Math.pi;
+        let a = this.radius * this.radius * Math.PI;
         return a;
     }
 }
@@ -67,12 +67,12 @@ let Sphere = {
     radius: 6,
 
     volume: function(){
-        let v = 4/3 * Math.pi * this.radius * this.radius * this.radius;
+        let v = 4/3 * Math.PI * this.radius * this.radius * this.radius;
         return v;
     },
 
     surfaceArea: function(){
-        let s = 4 * Math.pi * this.radius * this.radius;
+        let s = 4 * Math.PI * this.radius * this.radius;
         return s;
     }
 }
@@ -107,8 +107,8 @@ function test(){
     
     console.log(`------ Box Stuff ------`);
     console.log(`sides = ${Box.length} by ${Box.width} by ${Box.height}`);
-    console.log(`perimeter = ${Rectangle.surfaceArea()}`);
-    console.log(`area = ${Rectangle.volume()}\n`);
+    console.log(`perimeter = ${Box.surfaceArea()}`);
+    console.log(`area = ${Box.volume()}\n`);
     
     console.log(`------ Sphere Stuff ------`);
     console.log(`radius = ${Sphere.radius}`);
